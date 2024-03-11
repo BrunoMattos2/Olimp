@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Olimpo turismo</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Olimpo viagens</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Destino</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Taxas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <section class="container-fluid bg-warning text-center">
+        <h2>Orlando</h2>
+        <p>Orlando é uma cidade localizada no estado norte-americano da Flórida, no condado de Orange, do qual é sede. Foi fundada em 1873 e incorporada em 1875. É a sede do condado de Orange e a cidade central da área metropolitana de Orlando-Kissimmee, que é a terceira maior área metropolitana do estado da Flórida. A cidade é conhecida por abrigar a Disney World, o Universal Studios e o SeaWorld. A cidade é um dos principais destinos turísticos do mundo, atraindo mais de 50 milhões de turistas por ano. A cidade é conhecida por abrigar a Disney World, o Universal Studios e o SeaWorld. A cidade é um dos principais destinos turísticos do mundo, atraindo mais de 50 milhões de turistas por ano.</p>
+
+        <img src="Sem título.jpg" class="img-fluid" alt="Orlando">
+    </section>
+
+    <section class="container-fluid bg-warning text-center">
+        <h2>Paris</h2>
+        <p>Paris é a capital e a maior cidade da França, com uma população de 2,2 milhões de habitantes. Localizada no norte do país, às margens do rio Sena, Paris é o centro de uma aglomeração de 12 milhões de habitantes, a mais populosa da União Europeia. Desde os tempos romanos, é uma das cidades mais importantes do mundo. Paris é o lar de algumas das mais importantes empresas e instituições financeiras e de serviços do mundo, e é um dos principais centros de moda, entretenimento, arte e cultura do mundo. A cidade é um dos destinos turísticos mais populares do mundo, com mais de 30 milhões de visitantes por ano.</p>
+        <img src="passagens-aereas-paris-capa2019-02-820x430.jpg" class="img-fluid" alt="Paris">
+    </section>
+
+    <section class="container-fluid bg-warning text-center">
+        <h2>Tóquio</h2>
+        <p>Tóquio é a capital e a maior cidade do Japão, com uma população de 13,6 milhões de habitantes. Localizada na ilha de Honshu, Tóquio é o centro de uma aglomeração de 35 milhões de habitantes, a maior do mundo. Tóquio é o centro político, econômico e cultural do Japão, e é o lar de algumas das maiores empresas e instituições financeiras e de serviços do mundo. A cidade é um dos principais centros de moda, entretenimento, arte e cultura do mundo. Tóquio é um dos destinos turísticos mais populares do mundo, com mais de 30 milhões de visitantes por ano.</p>
+        <img src="Akihabara-2-1.jpg" class="img-fluid" alt="Toquio">
+    </section>
+
+    
+
+<form class="container-fluid bg-warning">
+  <h2>Formulário de Reserva de Viagem</h2>
+    <fieldset>
+        <legend>Informações Pessoais:</legend>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+    
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Serviços Desejados:</legend>
+        <input type="checkbox" id="passagens" name="servicos" value="Compra de Passagens">
+        <label for="passagens">Compra de Passagens</label><br>
+        <input type="checkbox" id="hospedagem" name="servicos" value="Reserva de Hospedagem">
+        <label for="hospedagem">Reserva de Hospedagem</label><br>
+        <input type="checkbox" id="veiculos" name="servicos" value="Aluguel de Veículos">
+        <label for="veiculos">Aluguel de Veículos</label><br>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Forma de Pagamento:</legend>
+        <input type="radio" id="cartao" name="pagamento" value="Cartão de Crédito">
+        <label for="cartao">Cartão de Crédito</label><br>
+        <input type="radio" id="boleto" name="pagamento" value="Boleto">
+        <label for="boleto">Boleto</label><br>
+        <input type="radio" id="pix" name="pagamento" value="PIX">
+        <label for="pix">PIX</label><br>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Prazo de Pagamento:</legend>
+        <select id="prazo" name="prazo">
+            <option value="avista">À Vista</option>
+            <option value="cinco">Cinco Vezes Sem Juros</option>
+            <option value="dez">Dez Vezes Com Juros</option>
+        </select><br>
+    </fieldset>
+    
+    <input type="submit" value="Enviar">
+</form> 
+     
+    <footer class="bg-primary"> <small>&copy; Copyright 2024, Bruno Mattos</small> </footer> 
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
